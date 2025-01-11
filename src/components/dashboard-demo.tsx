@@ -13,6 +13,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar";
+import ModeToggle from "./mode-toggle";
 
 export default function DashboardDemo() {
   return (
@@ -36,6 +37,7 @@ export default function DashboardDemo() {
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
+            <ModeToggle />
           </div>
         </header>
         <div className='flex flex-1 flex-col gap-4 p-4 pt-0'>
