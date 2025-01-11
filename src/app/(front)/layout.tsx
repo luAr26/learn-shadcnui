@@ -1,4 +1,5 @@
-import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import { SiteHeader } from "@/components/site-header";
 
 export default function FontLayout({
   children,
@@ -6,9 +7,10 @@ export default function FontLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className='p-8'>
-      <Navbar />
+    <>
+      <SiteHeader />
+      <Hero />
       {children}
-    </div>
+    </>
   );
 }
